@@ -22,16 +22,234 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header">
-            <h1 class="title">Fantasy Golf <span>Snake Draft</span></h1>
-        </div><!-- end header -->
+        <div class="sti_app">
+            
+            <div class="header">
+                <h1 class="title">Fantasy Golf <span>Snake Draft</span></h1>
+            </div><!-- end .header -->
+    
+            <div class="ui__snake-draft">
+                <div class="ui__clock" ng-controller="ClockController as clock">
+                    <div class="title">Time Left to Pick</div>
+                    <div class="value">{{02:00 | Date : mm ss}}</div>
+                </div><!-- end .ui__clock -->
+                <div class="ui__draft-round round1">
+                    <div class="ui__draft-team is-picking">
+                        <div class="position ordinal">1st</div>
+                        <div class="position picking">Picking</div>
+                        <div class="icon"></div>
+                        <div class="team-name">Team Name</div>
+                    </div>
+                    <div class="ui__draft-team">
+                        <div class="position ordinal">1st</div>
+                        <div class="position picking">Picking</div>
+                        <div class="icon"></div>
+                        <div class="team-name">Team Name</div>
+                    </div>
+                    <div class="ui__draft-team">
+                        <div class="position ordinal">1st</div>
+                        <div class="position picking">Picking</div>
+                        <div class="icon"></div>
+                        <div class="team-name">Team Name</div>
+                    </div>
+                </div>
+                <div class="ui__draft-round round2">
+                    <div class="ui__draft-team">
+                        <div class="position ordinal">1st</div>
+                        <div class="position picking">Picking</div>
+                        <div class="icon"></div>
+                        <div class="team-name">Team Name</div>
+                    </div>
+                    <div class="ui__draft-team">
+                        <div class="position ordinal">1st</div>
+                        <div class="position picking">Picking</div>
+                        <div class="icon"></div>
+                        <div class="team-name">Team Name</div>
+                    </div>
+                    <div class="ui__draft-team">
+                        <div class="position ordinal">1st</div>
+                        <div class="position picking">Picking</div>
+                        <div class="icon"></div>
+                        <div class="team-name">Team Name</div>
+                    </div>
+                </div>
+            </div><!-- end .ui__snake-draft -->
 
-        <div class="ui__snake-draft">
-            <div class="ui__clock" ng-controller="ClockController as clock">
-                <div class="title">Time Left to Pick</div>
-                <div class="value">02:00</div>
-            </div><!-- end clock -->
-        </div><!-- end snake-draft -->
+            <div class="prospect-list-container">
+                <div class="ui__preview-player">
+                    <div class="ui__player-card">
+                        <div class="content">
+                            <div class="headshot">
+                                <img href="playerheadhot.jpg"/>
+                            </div>
+                            <div class="name"></div>
+                            <div class="pre-draft-rank">Your Predraft Rank: <span>12</span></div>
+                        </div>
+                        <div class="stats">Stats here</div>
+                    </div>
+                    <button type="submit">Add to Queue</button>
+                </div>
+                <!-- end .ui__preview-player -->
+                <div class="prospect-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="icon"></th>
+                                <th class="rank">Rank</th>
+                                <th class="name">Name</th>
+                                <th class="tourneys">Tourneys</th>
+                                <th class="scores">Scores</th>
+                                <th class="driving">Driving</th>
+                                <th class="approach">Approach</th>
+                                <th class="putting">Putting</th>
+                                <th class="total">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                            <tr class="player-row">
+                                <td class="icon"></td>
+                                <td class="rank">1</td>
+                                <td class="name">Player Name</td>
+                                <td class="tourneys">4</td>
+                                <td class="scores">17.2</td>
+                                <td class="driving">15.1</td>
+                                <td class="approach">13.2</td>
+                                <td class="putting">12.3</td>
+                                <td class="total">57.8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- end .prospect-list-container -->
+            <div class="sidebar">
+                <div class="ui__pick-history">
+                    <h2>Picking History</h2>
+                    <ol>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                        <li>Player Name</li>
+                    </ol>
+                </div><!-- end .pick-history -->
+                <div class="ui__draft-results">
+                    <select>
+                        <option value="my team">My Team</option>
+                        <option value="team 1">Team 1</option>
+                        <option value="team 2">Team 2</option>
+                        <option value="team 3">Team 3</option>
+                        <option value="team 4">Team 4</option>
+                        <option value="team 5">Team 5</option>
+                    </select>
+                    <div class="roster=list">
+                        <h2>Foursome</h2>
+                        <ol class="active">
+                            <li>Player Name</li>
+                            <li>Player Name</li>
+                            <li>Player Name</li>
+                            <li>Player Name</li>
+                        </ol>
+                        <h2>Benched</h2>
+                        <ol class="benched">
+                            <li>Player Name</li>
+                            <li>Player Name</li>
+                            <li>Player Name</li>
+                            <li>Player Name</li>
+                        </ol>
+                    </div>
+                </div><!-- end .draft-results -->
+                <div class="ui__player-queue">
+                    <h2>Player Queue</h2>
+                    <ol>
+                        <li>A Player I Want</li>
+                        <li>A Player I Want</li>
+                        <li>A Player I Want</li>
+                        <li>A Player I Want</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- end .sti_app -->
 
 
 

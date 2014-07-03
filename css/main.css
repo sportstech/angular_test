@@ -61,19 +61,100 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #666;
+    background: rgba(140,140,140,0.8);
+    padding: 10px;
+}
+.header .title {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.header .title span {
+    color: #999;
+    color: rgba(255,255,255,0.4);
+}
+
+.ui__snake-draft {
+    background: #efefef;
+    height: 50px;
+    overflow: hidden;
+}
+
+.prospect-list-container {
+    background: rgba(255,0,0,0.1);
+    float: left;
+    width: 67%;
+}
+.sidebar {
+    background: rgba(255,0,0,0.2);
+    float: right;
+    overflow: hidden;
+    width: 33%;
+}
+
+.ui__clock {
+    /*background: #bce3cb;*/
+    float: left;
+    padding: 10px;
+    width: 200px;
+}
+.ui__clock .title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ui__draft-round {
+    border-right: 5px solid #222;
+}
 
 
+.ui__draft-team {
+    padding: 10px;
+    float: left;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    text-align: center;
+    width: 70px;
+}
+.ui__draft-team .position {
+    font-size: 12px;
+    font-weight: bold;
+}
+.ui__draft-team .picking {
+    display: none;
+}
+.ui__draft-team.is-picking {
+    background: rgba(255,0,0,0.5);
+    color: #fff;
+}
+.ui__draft-team.is-picking .ordinal {
+    display: none;
+}
+
+.ui__draft-team.is-picking .picking {
+    display: block;
+}
 
 
+.ui__preview-player {
+    background: #ddd;
+}
 
-
-
-
-
-
-
-
-
+.ui__pick-history,
+.ui__draft-results,
+.ui__player-queue {
+    float: left;
+    width: 50%;
+}
 
 /* ==========================================================================
    Media Queries
